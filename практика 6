@@ -1,0 +1,37 @@
+1
+import random
+
+def nested_sum():
+
+    i = random.randint(1,10)
+    t = 0
+    massiv =[] 
+    for x in range(i):
+        massiv.append([])
+        for z in range(i):
+            massiv[x].append(random.randint(1,9))
+            t+= massiv[x][z]
+    print(massiv, t)
+
+nested_sum()
+2
+import random
+
+def cumsum():
+    i = random.randint(1,10)
+    massiv =[]
+    cim=[]
+    for x in range(i):
+        massiv.append(random.randint(1,10))
+    for i in range(len(massiv)):
+        cim.append(sum(massiv[:i+1]))
+    print(massiv, cim)
+
+cumsum()
+
+3
+def middle():
+    
+    t = [1,2,3]
+    print(t,t[1:-1])
+middle()
